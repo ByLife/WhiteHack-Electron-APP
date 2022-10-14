@@ -1,0 +1,27 @@
+{
+  "name": "whitehack-app",
+  "version": "0.1.0",
+  "description": "Cybersecurity learning application for my students",
+  "main": "app.js",
+  "scripts": {
+    "test": "electron .",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ByLife/WhiteHack-Electron-APP.git"
+  },
+  "keywords": [
+    "learn",
+    "cybersecurity"
+  ],
+  "author": "ByLife",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ByLife/WhiteHack-Electron-APP/issues"
+  },
+  "homepage": "https://github.com/ByLife/WhiteHack-Electron-APP#readme",
+  "devDependencies": {
+    "electron": "^21.1.1"
+  }
+}
