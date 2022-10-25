@@ -23,15 +23,6 @@ App.whenReady().then(() => {
       createWindow()
     }
   })
-
-  const filter = {
-    urls: ['*://classic.minecraft.net/*']
-  };
-  session.defaultSession.webRequest.onBeforeSendHeaders(filter, (details, callback) => {
-      details.requestHeaders['Origin'] = null;
-      details.headers['Origin'] = null;
-      callback({ requestHeaders: details.requestHeaders })
-  });
 })
 
 App.on('window-all-closed', () => {

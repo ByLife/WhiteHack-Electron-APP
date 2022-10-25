@@ -411,16 +411,16 @@
 }
 @keyframes turnaround {
   0% {
-    transform: perspective(500px) rotateY(30deg) rotateZ(-5deg) rotateX(20deg);
+    transform: perspective(500px) rotateY(5deg) rotateZ(-2deg) rotateX(2deg);
   }
   33% {
-    transform: perspective(400px) rotateY(10deg) rotateZ(-9deg) rotateX(-15deg);
+    transform: perspective(500px) rotateY(3deg) rotateZ(3deg) rotateX(-6deg);
   }
   67% {
-    transform: perspective(450px) rotateY(0deg) rotateZ(0deg) rotateX(0deg);
+    transform: perspective(500px) rotateY(0deg) rotateZ(0deg) rotateX(0deg);
   }
   100% {
-    transform: perspective(500px) rotateY(30deg) rotateZ(-5deg) rotateX(20deg);
+    transform: perspective(500px) rotateY(5deg) rotateZ(-2deg) rotateX(2deg);
   }
 }
 .reference {
