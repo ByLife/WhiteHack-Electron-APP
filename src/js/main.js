@@ -1,18 +1,23 @@
 const urlParams = new URLSearchParams(window.location.search);
 if(urlParams.has('identifiant')){
+    if(urlParams.get('identifiant') == "") Redirect()
     var id = urlParams.get('identifiant')
-    fetch("/echo/json/",
-{
+    fetch("http://localhost:8080/api/auth/" + id,
+    {
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json'
     },
-    method: "POST",
-    body: JSON.stringify({a: 1, b: 2})
+    method: "GET"
 })
-.then(function(res){ console.log(res) })
+.then(function(res){ 
+  res.json().then(user => {
+
+  }) 
+})
 .catch(function(res){ console.log(res) })
+} else Redirect()
+
+var Redirect = () => {
+  document.location.href="./../index.html";
 }
-
-
-// document.location.href="./../index.html";
